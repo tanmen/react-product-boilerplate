@@ -1,3 +1,5 @@
+const {TsconfigPathsPlugin} = require('tsconfig-paths-webpack-plugin');
+
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
   addons: ['@storybook/addon-actions', '@storybook/addon-links'],
@@ -8,9 +10,7 @@ module.exports = {
         {
           loader: require.resolve('babel-loader'),
           options: {
-            customize: require.resolve(
-              'babel-preset-react-app/webpack-overrides'
-            ),
+            customize: require.resolve('babel-preset-react-app/webpack-overrides'),
             plugins: [
               [
                 require.resolve('babel-plugin-named-asset-import'),
@@ -30,6 +30,7 @@ module.exports = {
         }
       ],
     });
+    config.resolve.plugins = [new TsconfigPathsPlugin()];
     config.resolve.extensions.push('.ts', '.tsx');
     return config;
   },

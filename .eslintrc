@@ -7,5 +7,13 @@
     "func-style": ["error", "expression"],
     "max-lines-per-function": ["error", 100]
   },
-  "ignorePatterns": ["src/serviceWorker.ts"]
+  "ignorePatterns": [
+    "src/serviceWorker.ts",
+    "**/*.stories.tsx",
+    "**/*.stories.ts",
+    "**/*.spec.tsx",
+    "**/*.spec.ts",
+    "**/*.test.tsx",
+    "**/*.test.ts"
+  ]
 }

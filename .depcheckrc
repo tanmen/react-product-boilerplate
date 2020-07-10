@@ -4,3 +4,4 @@ ignores: [
   "@svgr/webpack",
   "jest-resolve"
 ]
+skip-missing: true

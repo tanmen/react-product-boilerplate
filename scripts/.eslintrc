@@ -4,6 +4,7 @@
     "sourceType": "script"
   },
   "rules": {
-    "strict": ["error", "global"]
+    "strict": ["error", "global"],
+    "quotes": ["error", "single"]
   }
 }
