@@ -1,5 +1,5 @@
 {
-  "extends": "../.eslintrc",
+  "extends": "react-app",
   "parserOptions": {
     "sourceType": "script"
   },

@@ -2,6 +2,9 @@
   "root": true,
   "extends": "react-app",
   "rules": {
-    "quotes": ["error", "single"]
-  }
+    "quotes": ["error", "single"],
+    "prefer-arrow-callback": ["error"],
+    "func-style": ["error", "expression"]
+  },
+  "ignorePatterns": ["serviceWorker.ts"]
 }
