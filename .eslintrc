@@ -4,7 +4,8 @@
   "rules": {
     "quotes": ["error", "single"],
     "prefer-arrow-callback": ["error"],
-    "func-style": ["error", "expression"]
+    "func-style": ["error", "expression"],
+    "max-lines-per-function": ["error", 100]
   },
-  "ignorePatterns": ["serviceWorker.ts"]
+  "ignorePatterns": ["src/serviceWorker.ts"]
 }
