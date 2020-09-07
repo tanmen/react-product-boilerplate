@@ -11,7 +11,8 @@
     "lint": "eslint '{config,scripts,src,types}/**/*.{ts,tsx,js}'",
     "format": "yarn lint --fix",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "update": "node scripts/update.js"
   },
   "dependencies": {
     "@babel/core": "7.9.0",
@@ -77,7 +78,10 @@
     "webpack": "4.42.0",
     "webpack-dev-server": "3.10.3",
     "webpack-manifest-plugin": "2.2.0",
-    "workbox-webpack-plugin": "4.3.1"
+    "workbox-webpack-plugin": "4.3.1",
+    "identity-obj-proxy": "3.0.0",
+    "sass-loader": "8.0.2",
+    "semver": "6.3.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.3.19",
@@ -106,6 +110,7 @@
     "@types/webpack-dev-server": "3.11.0",
     "@types/webpack-manifest-plugin": "2.1.0",
     "@types/workbox-webpack-plugin": "5.1.1",
+    "axios": "^0.20.0",
     "depcheck": "^1.0.0",
     "tsconfig-paths-webpack-plugin": "^3.2.0"
   }

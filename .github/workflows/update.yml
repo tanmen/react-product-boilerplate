@@ -1,0 +1,15 @@
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn
+      - run: yarn update
+      - run: yarn format
+      - uses: EndBug/add-and-commit@v4
+        with:
+          message: Updated boilerplate with a new version of create-react-app
