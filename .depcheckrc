@@ -2,6 +2,9 @@ ignores: [
   "@types/*",
   "@storybook/*",
   "@svgr/webpack",
-  "jest-resolve"
+  "jest-resolve",
+  "identity-obj-proxy",
+  "sass-loader",
+  "semver"
 ]
 skip-missing: true

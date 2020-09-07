@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 import {Todo} from 'models/todo';
 import React, {ChangeEvent, FC, KeyboardEvent} from 'react';
-import {Paths, useHistory} from 'routes';
+import {Paths} from 'routes/paths';
+import {useHistory} from 'routes/router';
 
 export const RootTemplate: FC<{ create: (todo: Omit<Todo, 'id'>) => unknown }> = ({create}) => {
   const history = useHistory();

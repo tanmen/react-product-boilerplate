@@ -11,7 +11,6 @@ test('renders learn react link', () => {
       <RootTemplate create={mockCreate}/>
     </MemoryRouter>
   );
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-  userEvent.click(screen.getByText(/learn react/i));
+  const element = getByText(/What are you doing today?/i);
+  expect(element).toBeInTheDocument();
 });
